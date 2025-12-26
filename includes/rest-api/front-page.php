@@ -34,6 +34,13 @@ function zaryab_get_front_page(WP_REST_Request $request)
   $data = array(
     'title' => get_the_title($page_id),
     'ribbon' => get_field('ribbon', $page_id), // ACF textarea
+    'general_title' => get_field('general_title', $page_id), // ACF textarea
+    'persian_image' => get_field('persian_image', $page_id), // ACF textarea
+    'persian_title' => get_field('persian_title', $page_id), // ACF textarea
+    'persian_content' => get_field('persian_content', $page_id), // ACF textarea
+    'pashto_image' => get_field('pashto_image', $page_id), // ACF textarea
+    'pashto_title' => get_field('pashto_title', $page_id), // ACF textarea
+    'pashto_content' => get_field('pashto_content', $page_id), // ACF textarea
   );
 
   return new WP_REST_Response($data, 200);
