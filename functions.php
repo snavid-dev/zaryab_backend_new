@@ -7,6 +7,7 @@ foreach (glob(get_template_directory() . "/includes/rest-api/*.php") as $file) {
     require_once $file;
 }
 
+
 /**
  * Format taxonomy terms into a structured array.
  *
